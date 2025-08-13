@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Industrial Parts Supplier Design System */
+
+@layer base {
+  :root {
+    /* Industrial Color Palette */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Industrial Blue Primary */
+    --primary: 214 75% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 75% 30%;
+
+    /* Professional Gray Secondary */
+    --secondary: 220 10% 95%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 220 10% 96%;
+    --muted-foreground: 215 10% 45%;
+
+    /* Industrial Orange Accent */
+    --accent: 25 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 75% 35%;
+
+    /* Industrial Specific Colors */
+    --industrial-steel: 215 15% 25%;
+    --industrial-steel-light: 215 15% 85%;
+    --industrial-orange: 25 100% 50%;
+    --industrial-blue: 214 75% 35%;
+    --industrial-gray: 220 10% 50%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(214 75% 35%), hsl(214 75% 45%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 10% 98%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(220 10% 50% / 0.1), 0 2px 4px -1px hsl(220 10% 50% / 0.06);
+    --shadow-hover: 0 10px 15px -3px hsl(220 10% 50% / 0.1), 0 4px 6px -2px hsl(220 10% 50% / 0.05);
+
+    --radius: 0.5rem;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode for industrial theme */
+    --background: 215 25% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 214 75% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 75% 45%;
+
+    --secondary: 215 15% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 215 15% 15%;
+    --muted-foreground: 215 10% 65%;
+
+    --accent: 25 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 15% 20%;
+    --input: 215 15% 20%;
+    --ring: 214 75% 50%;
+
+    --industrial-steel: 215 15% 70%;
+    --industrial-steel-light: 215 15% 25%;
+    --industrial-orange: 25 100% 55%;
+    --industrial-blue: 214 75% 50%;
+    --industrial-gray: 220 10% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Industrial Typography */
+  .text-hero {
+    @apply text-5xl md:text-6xl font-bold leading-tight;
+  }
+
+  .text-section {
+    @apply text-3xl md:text-4xl font-semibold;
+  }
+
+  .text-card-title {
+    @apply text-xl font-semibold;
+  }
+
+  /* Industrial Components */
+  .card-industrial {
+    @apply bg-card border border-border rounded-lg shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-[var(--transition-smooth)];
+  }
+
+  .btn-industrial {
+    @apply bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary-hover))] text-primary-foreground px-6 py-3 rounded-md font-medium transition-[var(--transition-smooth)];
+  }
+
+  .btn-industrial-outline {
+    @apply border-2 border-[hsl(var(--primary))] text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))] hover:text-primary-foreground px-6 py-3 rounded-md font-medium transition-[var(--transition-smooth)];
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "id": "bearing-001",
+    "partNumber": "BRG-6205-2RS",
+    "name": "Deep Groove Ball Bearing 6205-2RS",
+    "category": "Bearings",
+    "brand": "Industrial Pro",
+    "price": 24.99,
+    "description": "High-quality deep groove ball bearing with rubber seals on both sides. Suitable for various industrial applications requiring high speed and radial load capacity.",
+    "specifications": {
+      "innerDiameter": "25mm",
+      "outerDiameter": "52mm",
+      "width": "15mm",
+      "loadRating": "14,000N",
+      "maxSpeed": "18,000 RPM",
+      "sealType": "2RS (Rubber Sealed)",
+      "material": "Chrome Steel"
+    },
+    "image": "/images/bearing-001.jpg",
+    "datasheet": "/datasheets/bearing-6205-2rs.pdf",
+    "inStock": true,
+    "tags": ["bearing", "sealed", "ball bearing", "industrial"]
+  },
+  {
+    "id": "motor-001",
+    "partNumber": "MOT-IE3-5.5KW",
+    "name": "IE3 Premium Efficiency Motor 5.5kW",
+    "category": "Motors",
+    "brand": "MotorTech",
+    "price": 1299.99,
+    "description": "High-efficiency three-phase induction motor meeting IE3 standards. Ideal for pumps, fans, compressors, and general industrial machinery.",
+    "specifications": {
+      "power": "5.5kW",
+      "voltage": "400V",
+      "frequency": "50Hz",
+      "speed": "1450 RPM",
+      "efficiency": "89.2%",
+      "frame": "132M",
+      "mounting": "B3 (Foot Mounted)",
+      "protection": "IP55"
+    },
+    "image": "/images/motor-001.jpg",
+    "datasheet": "/datasheets/motor-ie3-5.5kw.pdf",
+    "inStock": true,
+    "tags": ["motor", "IE3", "efficiency", "three-phase"]
+  },
+  {
+    "id": "valve-001",
+    "partNumber": "VLV-BV-DN50",
+    "name": "Stainless Steel Ball Valve DN50",
+    "category": "Valves",
+    "brand": "FlowControl",
+    "price": 189.50,
+    "description": "Full bore stainless steel ball valve with PTFE seats. Suitable for water, oil, and gas applications in industrial systems.",
+    "specifications": {
+      "size": "DN50 (2 inch)",
+      "material": "316 Stainless Steel",
+      "pressure": "PN16 (16 bar)",
+      "temperature": "-20°C to +180°C",
+      "connection": "Threaded BSP",
+      "operation": "Manual Lever",
+      "seatMaterial": "PTFE",
+      "mediaCompatibility": "Water, Oil, Gas"
+    },
+    "image": "/images/valve-001.jpg",
+    "datasheet": "/datasheets/valve-dn50.pdf",
+    "inStock": true,
+    "tags": ["valve", "ball valve", "stainless steel", "DN50"]
+  },
+  {
+    "id": "pump-001",
+    "partNumber": "PMP-CEN-150",
+    "name": "Centrifugal Pump 150 l/min",
+    "category": "Pumps",
+    "brand": "AquaFlow",
+    "price": 849.99,
+    "description": "Robust centrifugal pump designed for continuous duty in industrial water transfer applications. Cast iron construction with mechanical seal.",
+    "specifications": {
+      "flow": "150 l/min",
+      "head": "35m",
+      "inlet": "50mm (2 inch)",
+      "outlet": "40mm (1.5 inch)",
+      "power": "2.2kW",
+      "material": "Cast Iron",
+      "sealType": "Mechanical Seal",
+      "temperature": "0°C to +80°C"
+    },
+    "image": "/images/pump-001.jpg",
+    "datasheet": "/datasheets/pump-centrifugal-150.pdf",
+    "inStock": false,
+    "tags": ["pump", "centrifugal", "water", "industrial"]
+  },
+  {
+    "id": "coupling-001",
+    "partNumber": "CPL-FLEX-40",
+    "name": "Flexible Coupling 40mm Bore",
+    "category": "Couplings",
+    "brand": "DriveLink",
+    "price": 125.75,
+    "description": "Flexible jaw coupling with polyurethane spider element. Compensates for minor misalignments while transmitting torque efficiently.",
+    "specifications": {
+      "bore": "40mm",
+      "outerDiameter": "98mm",
+      "length": "78mm",
+      "torque": "500 Nm",
+      "spiderMaterial": "Polyurethane",
+      "hubMaterial": "Steel",
+      "misalignment": "±1.5°",
+      "temperature": "-40°C to +100°C"
+    },
+    "image": "/images/coupling-001.jpg",
+    "datasheet": "/datasheets/coupling-flex-40.pdf",
+    "inStock": true,
+    "tags": ["coupling", "flexible", "jaw coupling", "misalignment"]
+  },
+  {
+    "id": "gearbox-001",
+    "partNumber": "GBX-WRM-63",
+    "name": "Worm Gearbox 63 Frame Size",
+    "category": "Gearboxes",
+    "brand": "GearTech",
+    "price": 445.00,
+    "description": "Compact worm gearbox with high reduction ratio. Aluminum housing with synthetic oil lubrication for smooth, quiet operation.",
+    "specifications": {
+      "frame": "63",
+      "ratio": "30:1",
+      "inputSpeed": "1450 RPM",
+      "outputSpeed": "48 RPM",
+      "torque": "130 Nm",
+      "efficiency": "85%",
+      "mounting": "B5 Flange",
+      "lubrication": "Synthetic Oil"
+    },
+    "image": "/images/gearbox-001.jpg",
+    "datasheet": "/datasheets/gearbox-worm-63.pdf",
+    "inStock": true,
+    "tags": ["gearbox", "worm", "reduction", "compact"]
+  }
+]
