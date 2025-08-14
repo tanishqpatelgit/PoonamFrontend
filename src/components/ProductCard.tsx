@@ -33,7 +33,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute top-2 right-2">
-              {product.inStock ? (
+              {/* {product.inStock ? (
                 <Badge variant="secondary" className="bg-green-100 text-green-800">
                   <CheckCircle className="h-3 w-3 mr-1" />
                   In Stock
@@ -43,7 +43,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
                   <XCircle className="h-3 w-3 mr-1" />
                   Out of Stock
                 </Badge>
-              )}
+              )} */}
             </div>
           </div>
         </CardHeader>
@@ -54,16 +54,16 @@ const ProductCard = ({ product }: ProductCardProps) => {
               <Badge variant="outline" className="text-xs">
                 {product.category}
               </Badge>
-              <span className="text-xs text-muted-foreground">{product.brand}</span>
+              {/* <span className="text-xs text-muted-foreground">{product.brand}</span> */}
             </div>
             
             <h3 className="text-card-title font-semibold line-clamp-2 group-hover:text-primary transition-colors">
               {product.name}
             </h3>
             
-            <p className="text-sm text-muted-foreground font-mono">
+            {/* <p className="text-sm text-muted-foreground font-mono">
               Part: {product.partNumber}
-            </p>
+            </p> */}
             
             <p className="text-sm text-muted-foreground line-clamp-2">
               {product.description}

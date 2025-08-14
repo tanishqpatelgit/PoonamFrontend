@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Badge } from "../ui/badge";
-import { ArrowRight, Search, Zap, Shield, Clock, Award, Users, Package } from "lucide-react";
+import { Card, CardContent } from "../ui/card";
+import { ArrowRight, Search, Zap, Shield, Clock, Award, Package } from "lucide-react";
 import ProductCard from "../ProductCard";
 import productsData from "../data/products.json";
 
@@ -41,34 +40,36 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-hero text-primary-foreground">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-industrial.jpg')" }}
-        ></div>
-        <div className="relative container mx-auto px-4 py-20 md:py-32">
-          <div className="max-w-3xl">
-            <h1 className="text-hero mb-6">
-              Industrial Parts & Components
-              <span className="block text-accent">Made Simple</span>
-            </h1>
-            <p className="text-xl mb-8 text-primary-foreground/90">
-              Your trusted supplier for bearings, motors, valves, pumps, and precision components. 
-              Over 10,000 parts in stock with same-day dispatch available.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="btn-industrial text-lg px-8">
-                <Link to="/products">
-                  Browse Catalog
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="btn-industrial-outline text-lg px-8">
-                <Link to="/contact">
-                  Request Quote
-                </Link>
-              </Button>
+     <section className="relative gradient-hero text-primary-foreground">
+        <div
+          className="relative w-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/bg.jpg')" }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+
+          <div className="relative container mx-auto px-4 py-20 md:py-32">
+            <div className="max-w-3xl text-white">
+              <h1 className="text-hero mb-6">
+                Industrial Parts & Components
+                <span className="block text-accent">Made Simple</span>
+              </h1>
+              <p className="text-xl mb-8 text-white/90">
+                Your trusted supplier for bearings, motors, valves, pumps, and precision components.
+                Over 10,000 parts in stock with same-day dispatch available.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="btn-industrial text-lg px-8">
+                  <Link to="/products">
+                    Browse Catalog
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="btn-industrial-outline text-lg px-8">
+                  <Link to="/contact">
+                    Request Quote
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -153,28 +154,8 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-section mb-4">Need Technical Support?</h2>
-          <p className="text-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Our qualified engineers are ready to help you find the right parts for your application.
-            Get expert advice and custom quotes.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="text-lg px-8">
-              <Link to="/contact">
-                <Users className="mr-2 h-5 w-5" />
-                Contact Our Experts
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="btn-industrial-outline text-lg px-8">
-              <Link to="/about">
-                Learn More About Us
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+
+ 
     </div>
   );
 };
