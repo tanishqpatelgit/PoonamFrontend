@@ -1,4 +1,3 @@
-import * as React from "react"
 import type { HTMLAttributes, ReactNode } from "react"
 import { cn } from "../lib/utils"
 
@@ -39,7 +38,6 @@ export function ChartTooltipContent(props: ChartTooltipContentProps) {
 
   if (!active || !payload?.length) return null
 
-  const item = payload[0]
   const tooltipLabel =
     typeof labelFormatter === "function" ? labelFormatter(label, payload) : label
 
