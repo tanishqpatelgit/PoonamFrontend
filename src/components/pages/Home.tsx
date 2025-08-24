@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Badge } from "../ui/badge";
+import { Card, CardContent} from "../ui/card";
 import { ArrowRight, Search, Zap, Shield, Clock, Award, Users, Package } from "lucide-react";
 import ProductCard from "../ProductCard";
 import productsData from "../data/products.json";
