@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
-import { Menu, X, Search, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,13 +46,11 @@ const Header = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              <Search className="h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="sm">
-              <Phone className="h-4 w-4 mr-2" />
-              Get Quote
-            </Button>
+            <button className="flex items-center gap-2 p-2 rounded hover:bg-gray-200">
+      <ShoppingCart className="h-6 w-6" />
+      <span>Cart</span>
+    </button>
+          
           </div>
 
           {/* Mobile Menu Button */}

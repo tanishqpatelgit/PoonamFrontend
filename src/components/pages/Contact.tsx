@@ -103,7 +103,7 @@ const Contact = () => {
             </Card>
 
             {/* Quick Contact */}
-            <Card className="card-industrial">
+            {/* <Card className="card-industrial">
               <CardHeader>
                 <CardTitle>Emergency Support</CardTitle>
               </CardHeader>
@@ -117,7 +117,7 @@ const Contact = () => {
                   Call Emergency Line
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           {/* Quote Request Form */}
@@ -202,7 +202,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="bg-secondary/50 p-4 rounded-lg">
+                  {/* <div className="bg-secondary/50 p-4 rounded-lg">
                     <h4 className="font-medium mb-2">For faster quotes, please include:</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Part numbers or model numbers</li>
@@ -210,7 +210,7 @@ const Contact = () => {
                       <li>• Delivery timeline</li>
                       <li>• Application details</li>
                     </ul>
-                  </div>
+                  </div> */}
 
                   <Button type="submit" className="w-full btn-industrial" size="lg">
                     <Send className="mr-2 h-4 w-4" />
