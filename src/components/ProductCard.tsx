@@ -94,7 +94,7 @@
 
 import React from "react";
 import type { Product } from "../services/Product";
-
+import { MessageSquareQuote } from "lucide-react";
 interface ProductCardProps {
   product: Product;
 }
@@ -114,7 +114,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
     <div className="p-4 space-y-2">
       <div className="flex items-center justify-between">
-        <span className="text-xs border rounded px-2 py-0.5">{product.category}</span>
+        <span className="text-xs border rounded  bg-danger px-2 py-0.5">{product.category}</span>
         {/* <span className="text-xs text-muted-foreground">{product.brand}</span> */}
       </div>
 
@@ -125,22 +125,22 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <p className="text-sm text-gray-600 line-clamp-2">{product.description}</p>
 
       <div className="flex items-center justify-between pt-2">
-        <button type="button" className="text-gray-500 hover:text-primary">
+        {/* <button type="button" className="text-gray-500 hover:text-primary">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h4l2 2h6a2 2 0 012 2v4" />
           </svg>
-        </button>
+        </button> */}
       </div>
     </div>
   </Link>
 
   <div className="p-4 pt-0">
     <button
-      className="w-full btn-industrial bg-primary text-white py-2 rounded disabled:opacity-50"
-   
-    >
-      
-    </button>
+  className="w-full btn-industrial bg-primary text-white py-2 rounded-lg disabled:opacity-50 flex items-center justify-center gap-2"
+>
+  <MessageSquareQuote className="w-4 h-4" />
+  Get Quote
+</button>
   </div>
 </div>
 
